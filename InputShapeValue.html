@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="input-shape-value.css" rel="stylesheet" type="text/css">
+	<title>Input Data Bangun Datar</title>
+</head>
+<body>
+<div class="container">
+	<form action="OutputResultArea.php" method="post">
+		<h1 id="title">RUMUS-RUMUS</h1>
+		<hr id="line-under-title">
+
+		<table>
+			<tr class="value">
+				<td>
+					<pre class="teks">Nilai 1 : </pre>
+				</td>
+				<td>
+					<input autocomplete="off" class="identity" maxlength="50" name="nilai1" required
+						   size="25" spellcheck="false" type="number" placeholder="Masukkan angka">
+				</td>
+			</tr>
+			<tr class="value">
+				<td>
+					<pre class="teks">Nilai 2 : </pre>
+				</td>
+				<td>
+					<input autocomplete="off" class="identity" maxlength="50" name="nilai2" required
+						   size="25" spellcheck="false" type="number" placeholder="Masukkan angka">
+				</td>
+			</tr>
+		</table>
+
+		<table>
+			<tr id="shape">
+				<td>
+					<label for="segitiga" class="teks">
+						<input id="segitiga" name="shape" required type="radio" value="Segitiga">Segitiga
+					</label>
+					<label for="persegi-panjang" class="teks">
+						<input id="persegi-panjang" name="shape" required type="radio" value="Persegi Panjang">Persegi
+						Panjang
+					</label>
+				</td>
+			</tr>
+		</table>
+
+		<button id="submit" type="submit">Hitung</button>
+		<button id="reset" type="reset">Batal</button>
+	</form>
+</div>
+</body>
+</html>
